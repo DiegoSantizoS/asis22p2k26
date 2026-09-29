@@ -23,6 +23,7 @@
 
 using CapaControlador_Seguridad;
 using CapaControlador_Seguridad.Objetos_de_valor;
+using CapaVista_Mantenimiento2k26;
 using CapaVista_Navegador;
 using CapaVista_Seguridad.Ayudas;
 using System;
@@ -247,10 +248,13 @@ namespace CapaVista_Seguridad
                     "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            //   FrmNavegador Empleados = new FrmNavegador();
+            
+            FrmMantenimientoPacientes Pacientes = new FrmMantenimientoPacientes();
+            Pacientes.ShowDialog();
+            /*
             FrmMantenimientoEmpleado Empleados = new FrmMantenimientoEmpleado();
             Empleados.ShowDialog();
+        */
         }
 
         private void SeguridadBtnAplicaciones_Click(object sender, EventArgs e)
