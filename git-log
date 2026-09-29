@@ -1,0 +1,48 @@
+commit 055df4477329afea9ef3303daa2edd0ea22b785e
+Merge: 6af46a6 97f4f64
+Author: Diego Santizo <df.santizo7@gmail.com>
+Date:   Tue Sep 29 10:16:40 2026 -0600
+
+    Merge branch 'creacionDeSolucionDeClasesEnSeguridad_mantenimiento_0901-22-15950'
+
+commit 6af46a676802f6e4567c3eb047027ea0513dee3b
+Author: Diego Santizo <df.santizo7@gmail.com>
+Date:   Tue Sep 29 10:16:36 2026 -0600
+
+    fix
+
+commit 97f4f64f65f1d100880c7a07fbe8747ea6aa266e
+Author: Diego Santizo <df.santizo7@gmail.com>
+Date:   Tue Sep 29 10:15:25 2026 -0600
+
+    fix: miscelaneo
+
+commit 96f293e265adc19f67d2bb6b6e227ebaeb9f641b
+Author: Diego Santizo <df.santizo7@gmail.com>
+Date:   Tue Sep 29 09:55:56 2026 -0600
+
+    fix: cambios finalizados
+
+commit 9960dfe86973e62ed656614388bf7bc043a86598
+Author: Diego Santizo <df.santizo7@gmail.com>
+Date:   Tue Sep 29 09:19:09 2026 -0600
+
+    fix: cambio de dsn, EmbutidosS.A -> segundoparcial2k26f
+
+commit b594e025d8adc99c999d2794d59504ce2974eabe
+Author: Diego Santizo <df.santizo7@gmail.com>
+Date:   Tue Sep 29 09:05:00 2026 -0600
+
+    feat: Componentes Integrados
+
+commit 09c914bc936a71f534d186db4c688e073b58ecb1
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Mon Sep 28 18:43:48 2026 -0600
+
+    Inicial proyecto
+
+commit f414c498afdbaf970217efd1012204fbe9379647
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon Sep 28 18:41:50 2026 -0600
+
+    Initial commit
