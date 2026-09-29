@@ -13,6 +13,7 @@ namespace CapaVista_Mantenimiento2k26
 {
     public partial class FrmReporte : Form
     {
+        CapaControlador_Seguridad.ClsModeloUsuario usuario = new CapaControlador_Seguridad.ClsModeloUsuario();
         public FrmReporte()
         {
             InitializeComponent();
@@ -25,13 +26,13 @@ namespace CapaVista_Mantenimiento2k26
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)
-        {/*
-            ReportDataSource reportDataSource = new ReportDataSource("DataSet1", .GetAll());
-            reportViewer1.LocalReport.ReportEmbeddedResource = "CapaVista_DLL.Reportes.Report1.rdlc";
+        {
+            ReportDataSource reportDataSource = new ReportDataSource("DataSet1", usuario);
+            reportViewer1.LocalReport.ReportEmbeddedResource = "FrmReporte.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(reportDataSource);
             this.reportViewer1.RefreshReport();
-            */
+            
         }
     }
 }

@@ -30,16 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMantenimientoPacientes));
             this.navegador1 = new CapaVista_Navegador.Navegador();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ConsultasBtnReportes = new CapaVista_Consultas.Componentes.ClsBotonConsultas();
-            this.clsEtiquetaConsultas1 = new CapaVista_Consultas.Componentes.ClsEtiquetaConsultas();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(-11, 23);
+            this.navegador1.Location = new System.Drawing.Point(3, 3);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1438, 111);
+            this.navegador1.Size = new System.Drawing.Size(1062, 111);
             this.navegador1.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.navegador1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ConsultasBtnReportes, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1068, 527);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // ConsultasBtnReportes
             // 
@@ -50,49 +66,33 @@
             this.ConsultasBtnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ConsultasBtnReportes.FlatAppearance.BorderSize = 0;
             this.ConsultasBtnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConsultasBtnReportes.Location = new System.Drawing.Point(450, 219);
+            this.ConsultasBtnReportes.Location = new System.Drawing.Point(494, 442);
             this.ConsultasBtnReportes.Margin = new System.Windows.Forms.Padding(0);
             this.ConsultasBtnReportes.MaximumSize = new System.Drawing.Size(80, 80);
             this.ConsultasBtnReportes.MinimumSize = new System.Drawing.Size(80, 80);
             this.ConsultasBtnReportes.Name = "ConsultasBtnReportes";
             this.ConsultasBtnReportes.Size = new System.Drawing.Size(80, 80);
-            this.ConsultasBtnReportes.TabIndex = 2;
+            this.ConsultasBtnReportes.TabIndex = 4;
             this.ConsultasBtnReportes.UseVisualStyleBackColor = false;
-            this.ConsultasBtnReportes.Click += new System.EventHandler(this.ConsultasBtnReportes_Click);
-            // 
-            // clsEtiquetaConsultas1
-            // 
-            this.clsEtiquetaConsultas1.AutoSize = true;
-            this.clsEtiquetaConsultas1.BackColor = System.Drawing.Color.Transparent;
-            this.clsEtiquetaConsultas1.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.clsEtiquetaConsultas1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(74)))), ((int)(((byte)(99)))));
-            this.clsEtiquetaConsultas1.Location = new System.Drawing.Point(330, 248);
-            this.clsEtiquetaConsultas1.Margin = new System.Windows.Forms.Padding(3);
-            this.clsEtiquetaConsultas1.Name = "clsEtiquetaConsultas1";
-            this.clsEtiquetaConsultas1.Size = new System.Drawing.Size(108, 19);
-            this.clsEtiquetaConsultas1.TabIndex = 3;
-            this.clsEtiquetaConsultas1.Text = "REPORTES →";
-            this.clsEtiquetaConsultas1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ConsultasBtnReportes.Click += new System.EventHandler(this.ConsultasBtnReportes_Click_1);
             // 
             // FrmMantenimientoPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 450);
-            this.Controls.Add(this.clsEtiquetaConsultas1);
-            this.Controls.Add(this.ConsultasBtnReportes);
-            this.Controls.Add(this.navegador1);
+            this.ClientSize = new System.Drawing.Size(1068, 527);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmMantenimientoPacientes";
             this.Text = "FrmMantenimientoPacientes";
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private CapaVista_Navegador.Navegador navegador1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private CapaVista_Consultas.Componentes.ClsBotonConsultas ConsultasBtnReportes;
-        private CapaVista_Consultas.Componentes.ClsEtiquetaConsultas clsEtiquetaConsultas1;
     }
 }

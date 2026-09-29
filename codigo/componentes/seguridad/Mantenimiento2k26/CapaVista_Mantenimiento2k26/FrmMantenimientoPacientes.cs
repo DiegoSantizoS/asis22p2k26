@@ -28,5 +28,11 @@ namespace CapaVista_Mantenimiento2k26
             FrmReporte reporte = new FrmReporte();
             reporte.Show();
         }
+
+        private void ConsultasBtnReportes_Click_1(object sender, EventArgs e)
+        {
+            FrmReporte reporte = new FrmReporte();
+            reporte.Show();
+        }
     }
 }
